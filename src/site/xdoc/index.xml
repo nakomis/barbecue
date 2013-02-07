@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!-- $Header: /cvsroot/diaz/diaz/src/site/xdoc/index.xml,v 1.11 2006/10/22 19:49:52 sullis Exp $ -->
+<document>
+
+  <properties>
+    <title>diaz project</title>
+  </properties>
+
+  <body>
+
+  <section name="Overview">
+    <p>
+diaz is an open-source, Java library. The library contains a few simple classes that facilitate the construction of DAO classes</p>
+   </section>
+   
+  <section name="News">
+    <p>
+<ul>
+<li>August 20, 2007 - source code migrated from CVS to Subversion</li>
+<li>February 7, 2005 - project founded</li>
+</ul>
+    </p>
+    
+  </section>
+
+  </body>
+</document>

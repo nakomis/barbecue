@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="src" path="src/zip/examples"/>
+	<classpathentry kind="src" path="src/test"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/compile/servletapi-2.2.jar"/>
+	<classpathentry kind="lib" path="lib/runtime/jdom.jar"/>
+	<classpathentry kind="lib" path="lib/compile/portlet-api-2.0-prerelease.jar"/>
+	<classpathentry kind="lib" path="lib/compile/junit.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

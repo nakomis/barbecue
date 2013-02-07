@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqs title="Frequently Asked Questions">
+
+<part id="general">
+  <title>General</title>
+  
+  <faq id="license">
+  	<question>What license does the diaz project use?</question>
+  	<answer>Apache Licence 2.0</answer>
+  </faq>
+  
+  <faq id="what-jre">
+    <question>What JRE's are supported?</question>
+    <answer>
+      <p>diaz requires JRE 1.5 (Java 5) or higher.
+      </p>
+    </answer>
+  </faq>
+
+</part>
+
+
+</faqs>

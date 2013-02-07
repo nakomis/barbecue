@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Header: /cvsroot/diaz/diaz/src/site/site.xml,v 1.5 2006/09/22 03:40:30 sullis Exp $ -->
+<project name="diaz">
+  <body>
+    <links>
+      <item name="diaz" href="http://www.sourceforge.net/projects/diaz/" />
+    </links>
+
+    <menu name="diaz">
+      <item name="Home" href="/index.html"/>
+      <item name="Download" href="http://prdownloads.sourceforge.net/diaz/diaz-0.2.zip?download" />
+      <item name="FAQ" href="/faq.html"/>
+      <item name="License" href="http://diaz.svn.sourceforge.net/viewvc/diaz/trunk/diaz/LICENSE.txt?view=markup" />
+      <item name="View source" href="xref/index.html"/>
+      <item name="Javadocs" href="apidocs/index.html"/>
+      <item name="Tools and libraries" href="/tools.html"/>
+      <item name="Related" href="/related.html"/>
+      <item name="Credits" href="/credits.html"/>
+      <item name="SourceForge" href="http://sourceforge.net/projects/diaz/"/>
+    </menu>
+
+    ${reports}
+
+  </body>
+</project>

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!-- $Header: /cvsroot/barbecue/barbecue/src/site/xdoc/related.xml,v 1.7 2006/09/25 04:51:20 sullis Exp $ -->
+<document>
+  <properties>
+     <title>Related information</title>
+  </properties>
+  <body>
+  
+  
+  <section name="Related information">
+
+    <subsection name="JDBC">
+     <ul>
+         <li><a href="http://wiki.java.net/bin/view/Javapedia/JDBC">JDBC</a> in the Javapedia</li>
+     </ul>
+    </subsection>
+
+    <subsection name="Data Access Object pattern">
+	  <ul>
+		<li><a href="http://wiki.java.net/bin/view/Javapedia/DataAccessObject">DAO</a></li>
+      </ul>
+    </subsection>
+
+    <subsection name="Open source projects">
+      <ul>
+	  <li><a href="http://jakarta.apache.org/commons/dbutils/">Jakarta DBUtils</a></li>
+      <li><a href="http://ibatis.apache.org/">Apache iBATIS</a></li>
+      <li><a href="http://cayenne.apache.org/">Apache Cayenne</a></li>
+      <li><a href="http://db.apache.org/ojb/">Apache OJB</a></li>
+      <li><a href="http://openjpa.apache.org/">Apache OpenJPA</a></li>
+      <li><a href="http://db.apache.org/torque/">Apache Torque</a></li>
+      <li><a href="http://www.hibernate.org/">Hibernate</a></li>
+	  <li><a href="http://sourceforge.net/projects/mdaog">mdaog</a></li>
+      <li><a href="http://sourceforge.net/projects/sqlexecutor/">SQLExecutor</a></li>
+      <li>Spring Framework: <a href="http://www.springframework.org/docs/reference/jdbc.html">Data access with JDBC</a></li>
+      <li><a href="http://butler.sourceforge.net/">Butler</a></li>
+      <li><a href="http://ldbc.sourceforge.net/">LDBC</a></li>
+      <li><a href="http://www.crossdb.com/">CrossDB</a></li>
+      <li><a href="http://c-jdbc.objectweb.org/">C-JDBC</a></li>
+      </ul>
+    </subsection>
+
+
+    <subsection name="Articles">
+       <ul>
+       		<li><a href="http://www.ibm.com/developerworks/java/library/j-jdbcwrap/">An easy JDBC wrapper</a></li>
+       		<li><a href="http://www.ibm.com/developerworks/java/library/j-dao/">Advanced DAO Programming</a></li>
+       </ul>
+    </subsection>
+
+    <subsection name="Books">
+       <ul>
+	       	<li>TBD</li>
+       </ul>
+    </subsection>
+
+   </section>
+
+  </body>
+
+</document>
