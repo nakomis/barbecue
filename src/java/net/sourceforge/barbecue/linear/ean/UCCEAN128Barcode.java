@@ -26,17 +26,15 @@
 
 package net.sourceforge.barbecue.linear.ean;
 
+import java.text.CharacterIterator;
+import java.text.StringCharacterIterator;
+import java.util.StringTokenizer;
+
 import net.sourceforge.barbecue.BarcodeException;
-import net.sourceforge.barbecue.CompositeModule;
-import net.sourceforge.barbecue.Module;
 import net.sourceforge.barbecue.linear.code128.Accumulator;
 import net.sourceforge.barbecue.linear.code128.CharBuffer;
 import net.sourceforge.barbecue.linear.code128.Code128Barcode;
 import net.sourceforge.barbecue.linear.code128.ModuleFactory;
-
-import java.text.CharacterIterator;
-import java.text.StringCharacterIterator;
-import java.util.StringTokenizer;
 
 /**
  * An implementation of the UCC 128 and EAN 128 code formats. These are almost identical
@@ -147,7 +145,7 @@ public class UCCEAN128Barcode extends Code128Barcode {
 	 */
 	public UCCEAN128Barcode(String encodedData) throws BarcodeException
 	{
-		super(FNC_1, C);
+		super(FNC_1, O);
 		this.applicationIdentifier = EAN128_AI;
 		this.includeCheckDigit = false;
 
@@ -172,14 +170,15 @@ public class UCCEAN128Barcode extends Code128Barcode {
 
 			String barcode_data = st.nextToken();
 
-			if (lastAIwasVariableLength)
-				sb.append(FNC_1);
+			if (lastAIwasVariableLength) {
+			    sb.append(FNC_1);
+			}
 
 			lastAIwasVariableLength = (getAILength(ai) == 0);
 
 			sb.append(ai);
 			sb.append(barcode_data);
-
+			
 			labelBuffer.append("("+ai+")");
 			labelBuffer.append(barcode_data);
 
@@ -252,21 +251,6 @@ public class UCCEAN128Barcode extends Code128Barcode {
 
 		return 0;
 	}
-
-	/**
-     * Returns the pre-amble for this barcode type. This is basically
-     * a specific instance of the Code 128 barcode that always uses
-     * a C start char and FNC1 char in succession.
-     * @return The pre-amble module
-     */
-    protected Module getPreAmble() {
-        CompositeModule module = new CompositeModule();
-        if(isDrawingQuietSection()) {
-            module.add(QUIET_SECTION);
-        }
-        module.add(START_C);
-        return module;
-    }
 
     /**
      * Returns the text to be displayed underneath the barcode.
