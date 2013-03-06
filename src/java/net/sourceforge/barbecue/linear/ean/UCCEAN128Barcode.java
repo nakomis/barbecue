@@ -325,5 +325,5 @@ public class UCCEAN128Barcode extends Code128Barcode {
 		}
 		// Step 3: Subtract sum from nearest equal or higher multiple of ten (110)  =  Check Digit (9)
 		int ret = ((sum / 10) + 1) * 10 - sum;
-		return String.valueOf(ret);
+		return String.valueOf(ret % 10);
 	}}
